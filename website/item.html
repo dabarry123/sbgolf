@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short Bus | Item</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-mark" href="index.html">
+        <img src="assets/sblogo.jpeg" alt="Short Bus logo" class="brand-logo" />
+
+    <div class="header-center">
+      <button class="nav-item active">SHOP ALL</button>
+      <div class="nav-dropdown">
+        <button class="nav-item">MEN <span class="caret">▾</span></button>
+        <div class="dropdown-menu">Placeholder</div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-item">WOMEN <span class="caret">▾</span></button>
+        <div class="dropdown-menu">Placeholder</div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3.5a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm9 16.5-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a class="icon-button cart-button" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9.5H7.5L6 6Zm0 0L4 3H1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1" fill="currentColor"/><circle cx="17" cy="20" r="1" fill="currentColor"/></svg>
+        <span id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="item-page">
+    <div class="item-detail-card" id="itemDetail"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Explore your options and add to cart.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

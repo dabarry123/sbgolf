@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short Bus | Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header cart-page-header">
+    <div class="header-center">
+      <a class="brand-mark" href="index.html">
+        <img src="assets/sblogo.jpeg" alt="Short Bus logo" class="brand-logo" />
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <a class="icon-button bag-button" href="index.html" aria-label="Back to home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1.5 12.5H7.5L6 7Zm0 0L5 5H4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="cart-page">
+    <section class="cart-panel">
+      <div class="section-header">
+        <p class="eyebrow">Cart</p>
+        <h2>Order summary</h2>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-actions">
+        <button class="button secondary" id="clearCart">Clear cart</button>
+      </div>
+    </section>
+
+    <section class="order-panel">
+      <div class="section-header">
+        <p class="eyebrow">Submit order</p>
+        <h2>Send your request</h2>
+      </div>
+      <form id="orderForm" class="order-form">
+        <label>
+          Name
+          <input type="text" id="customerName" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="customerEmail" placeholder="you@example.com" />
+        </label>
+        <label>
+          Notes
+          <textarea id="orderNotes" placeholder="Add sizing or color preferences here"></textarea>
+        </label>
+        <button class="button primary" type="submit">Submit order</button>
+      </form>
+      <p class="hint">This demo creates a mail draft using your email client. Replace the placeholder order address in <code>script.js</code> when ready.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Short Bus | Simple order submission demo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

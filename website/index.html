@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short Bus | Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-mark" href="index.html">
+      <img src="assets/sblogo.jpeg" alt="Short Bus logo" class="brand-logo" />
+    </a>
+
+    <div class="header-center">
+      <button class="nav-item active">SHOP ALL</button>
+      <div class="nav-dropdown">
+        <button class="nav-item">MEN <span class="caret">▾</span></button>
+        <div class="dropdown-menu">Placeholder</div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-item">WOMEN <span class="caret">▾</span></button>
+        <div class="dropdown-menu">Placeholder</div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3.5a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm9 16.5-4.8-4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a class="icon-button cart-button" href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9.5H7.5L6 6Zm0 0L4 3H1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1" fill="currentColor"/><circle cx="17" cy="20" r="1" fill="currentColor"/></svg>
+        <span id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Our Collection</p>
+        <h1>Performance for the new season</h1>
+        <p>Custom apparel built with premium fit and modern details. Shop the Short Bus collection designed for style on and off the green.</p>
+        <div class="hero-actions">
+          <a class="hero-link" href="#products">SHOP THE COLLECTION</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-media">
+          <img src="assets/SBG_DB_IMG.jpg" alt="Short Bus hero image" class="hero-photo" />
+          <!-- Future video fallback: <video autoplay muted loop class="hero-video"><source src="assets/hero.mp4" type="video/mp4"></video> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="category-section">
+      <div class="section-header">
+        <p class="eyebrow">Shop categories</p>
+        <h2>Find your fit</h2>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#">
+          <div class="category-label">MEN</div>
+          <p>Explore the latest men’s styles with a premium performance finish.</p>
+        </a>
+        <a class="category-card" href="#">
+          <div class="category-label">WOMEN</div>
+          <p>Discover elevated women’s golfwear designed for comfort and movement.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="products" class="product-section">
+      <div class="section-header">
+        <p class="eyebrow">Best Sellers</p>
+        <h2>Our most popular pieces</h2>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Short Bus | Premium Golf Apparel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
